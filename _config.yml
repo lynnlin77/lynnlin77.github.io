@@ -22,7 +22,7 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "images/lynnprofile.png"
-  name             : "Qien Lin (Lynn)"
+  name             : "Qien Lin"
   pronouns         : "she/her"  
   bio              : "Short biography for the left-hand sidebar"
   location         : "Providence, RI"
