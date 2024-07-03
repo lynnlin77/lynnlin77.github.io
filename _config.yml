@@ -7,12 +7,12 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "Providence, RI"
-title                    : "Qien Lin / Lynn's Personal Website"
+locale                   : "en-US"
+title                    : "Your Name / Site Title"
 title_separator          : "-"
-name                     : &name "Qien Lin"
+name                     : &name "Your Name"
 description              : &description "personal description"
-url                      : "https://https://lynnlin77.github.io"
+url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
 
