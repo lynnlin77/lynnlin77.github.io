@@ -22,6 +22,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link
+          href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap"
+          rel="stylesheet"
+        />
+
         <Meta />
         <Links />
       </head>
@@ -30,9 +36,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         style={{ backgroundColor: configs.colors.background }}
       >
         <Navbar />
-
         {children}
-
         <ScrollRestoration />
         <Scripts />
       </body>

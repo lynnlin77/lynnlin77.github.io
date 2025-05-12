@@ -7,8 +7,10 @@ export default {
       fontFamily: {
         blackOpsOne: ["BlackOpsOne", "sans-serif"],
         courierPrime: ["CourierPrime", "monospace"],
+        quicksand: ["Quicksand", "sans-serif"],
       },
     },
   },
   plugins: [],
 } satisfies Config;
+

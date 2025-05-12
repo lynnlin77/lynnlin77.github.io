@@ -11,6 +11,19 @@
   font-weight: normal;
 }
 
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(10px); }
+  20% { opacity: 1; transform: translateY(0); }
+  80% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+
+.block.animate-fadeInOut {
+  animation-duration: 1s; 
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
