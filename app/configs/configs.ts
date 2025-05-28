@@ -33,15 +33,10 @@ powered by clean code, curiosity, and a touch of care 🌱✨
       items: [
         {
           title: "Brown University",
-          date: "2023-2027",
-          location: "",
-          content: `
-          I spent`,
-        },
-        {
-          title: "WLSA",
-          date: "2020-2023",
-          content: `F`,
+          date: "Sep 2023 - May 2027 (expected)",
+          degree: "Sc.B. Applied Math and Computer Science, 4.0/4.0",
+          location: "Providence, RI",
+          content: `Relevant Courses: Introduction to Computer Systems, Introduction to Object-Oriented Programming, Program Design with Data Structures and Algorithms, Foundation of AI, Deep Learning, Cybersecurity and International Relations`,
         },
       ],
     },

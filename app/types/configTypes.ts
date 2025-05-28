@@ -36,6 +36,7 @@ export interface Configs {
     items: {
       title: string;
       date?: string;
+      degree?: string;
       location?: string;
       content: string;
     }[];

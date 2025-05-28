@@ -32,6 +32,7 @@ export default function Experience() {
             <ExperienceCard
               title={item.title}
               date={item.date}
+              degree={item.degree}
               content={item.content}
               location={item.location}
             ></ExperienceCard>
