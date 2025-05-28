@@ -7,9 +7,18 @@ import {
 } from "@remix-run/react";
 import { Navbar } from "./components/Navbar";
 import stylesheet from "~/tailwind.css?url";
-import { LinksFunction } from "@remix-run/node";
 import configs from "./configs/configs";
 import About from "./routes/about";
+import { json } from "@remix-run/node";
+import { LinksFunction, LoaderFunctionArgs } from "@remix-run/node";
+
+
+// export async function loader({ request }: LoaderFunctionArgs) {
+//   if (request.url.includes("/.well-known/appspecific/")) {
+//     return new Response(null, { status: 204 });
+//   }
+//   return json({});
+// }
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
