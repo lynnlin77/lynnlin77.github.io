@@ -1,4 +1,4 @@
-import{r as o,j as e}from"./jsx-runtime.D2HyDbKh.js";import{c as i}from"./configs.CL4BGjPD.js";import{l as g,n as m,o as p,p as w,_ as j,L as x,O as v,M as b,q as L,S as k}from"./components.-YaCqz6X.js";import y from"./about.C8qjIvVV.js";import"./index.CuF8vg-G.js";import"./WordCycle.DyetSNUb.js";/**
+import{r as o,j as e}from"./jsx-runtime.D2HyDbKh.js";import{c as i}from"./configs.BDCgtgHg.js";import{l as g,n as m,o as p,p as w,_ as j,L as x,O as v,M as b,q as L,S as k}from"./components.-YaCqz6X.js";import y from"./about.B4qOWMG8.js";import"./index.CuF8vg-G.js";import"./WordCycle.DyetSNUb.js";/**
  * @remix-run/react v2.11.1
  *
  * Copyright (c) Remix Software Inc.

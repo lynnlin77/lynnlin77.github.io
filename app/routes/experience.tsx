@@ -24,18 +24,19 @@ export default function Experience() {
   return (
     <div className="mx-4 mt-10 md:mx-0 md:mt-12">
       {configs.experiencePage.map((section) => (
-        <div className="mb-12">
+        <div key={section.sectionName} className="mb-12"> {}
           <h1 className="text-3xl font-blackOpsOne mt-0 mb-6">
             {section.sectionName}
           </h1>
-          {section.items.map((item) => (
+          {section.items.map((item, index) => (
             <ExperienceCard
+              key={`${section.sectionName}-${index}`}
               title={item.title}
               date={item.date}
               degree={item.degree}
               content={item.content}
               location={item.location}
-            ></ExperienceCard>
+            />
           ))}
         </div>
       ))}

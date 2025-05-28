@@ -32,7 +32,7 @@ export default function ExperienceCard(props: ExperienceCardProps) {
         )}
 
         {/* content */}
-        <p className="text-md text-black-700 mb-1">
+        <p className="text-md text-black mb-1">
           {props.content}
         </p>
       </div>
