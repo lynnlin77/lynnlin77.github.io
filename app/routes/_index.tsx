@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import WordCycle from "~/components/WordCycle";
 
 import configs from "~/configs/configs";
 
@@ -36,9 +37,30 @@ export default function About() {
               <h1 className="text-5xl font-blackOpsOne my-6 md:my-1 lg:mb-12">
                 {configs.aboutPage.greeting}
               </h1>
-              <p className="font-courierPrime text-lg mx-6">
-                {configs.aboutPage.content}
-              </p>
+              <div className="text-xl leading-loose whitespace-pre-wrap font-quicksand text-gray-800 mx-6">
+                {(typeof configs.aboutPage.content === "string"? configs.aboutPage.content.trim().split("\n")
+                  : [])
+                  .map((line, index) => {
+                    if (line.includes("<WordCycle />")) {
+                      const [before, after] = line.split("<WordCycle />");
+                      return (
+                        <span
+                          key={index}
+                          className="block text-2xl font-semibold text-pink-500 italic"
+                        >
+                          {before}
+                          <WordCycle />
+                          {after}
+                        </span>
+                      );
+                    }
+                    return (
+                      <span key={index} className="block text-2xl font-semibold">
+                        {line}
+                      </span>
+                    );
+                  })}
+              </div>
             </div>
           </div>
         </div>

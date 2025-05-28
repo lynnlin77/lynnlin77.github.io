@@ -1,6 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
 import WordCycle from "~/components/WordCycle";
-
 import configs from "~/configs/configs";
 
 export const meta: MetaFunction = () => {
@@ -12,7 +11,6 @@ export const meta: MetaFunction = () => {
       content: `personal, website, about, profile, ${configs.name}`,
     },
     { name: "author", content: configs.name },
-
     { name: "viewport", content: "width=device-width, initial-scale=1" },
   ];
 };
@@ -37,24 +35,30 @@ export default function About() {
               <h1 className="text-5xl font-blackOpsOne my-6 md:my-1 lg:mb-12">
                 {configs.aboutPage.greeting}
               </h1>
-              <p className="text-xl leading-loose whitespace-pre-wrap font-quicksand text-gray-800 mx-6">
-                <span className="block text-2xl font-semibold text-orange-600">
-                  💻 Full-stack explorer
-                </span>
-                <span className="block text-2xl font-semibold text-amber-700">
-                  🐻 Brown University student,
-                </span>
-
-                <span className="block text-2xl font-semibold">
-                  powered by clean code, curiosity, and a touch of care 🌱✨
-                </span>
-
-                <span className="block text-2xl font-semibold mt-5">
-                  🌍 Combining tech, math, and music, to solve world’s challenges —{" "}
-                  <span className="italic text-pink-500"> and create with <WordCycle />.</span>
-                </span>
-                
-              </p>
+              <div className="text-xl leading-loose whitespace-pre-wrap font-quicksand text-gray-800 mx-6">
+              {(typeof configs.aboutPage.content === "string"? configs.aboutPage.content.trim().split("\n")
+                  : [])
+                  .map((line, index) => {
+                    if (line.includes("<WordCycle />")) {
+                      const [before, after] = line.split("<WordCycle />");
+                      return (
+                        <span
+                          key={index}
+                          className="block text-2xl font-semibold text-pink-500 italic"
+                        >
+                          {before}
+                          <WordCycle />
+                          {after}
+                        </span>
+                      );
+                    }
+                    return (
+                      <span key={index} className="block text-2xl font-semibold">
+                        {line}
+                      </span>
+                    );
+                  })}
+              </div>
             </div>
           </div>
         </div>

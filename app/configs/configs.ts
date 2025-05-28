@@ -21,11 +21,11 @@ const configs: Configs = {
   aboutPage: {
     greeting: "Hey, this is Lynn!",
     content: `
-      A full-stack explorer and Brown University student, 
-      crafting intuitive apps and resilient systems.
-      Blending technology, mathematics, and music
-      to solve real-world challenges — and build with purpose.
-    `,
+  💻 Full-stack explorer  🐻 Brown University student,  
+powered by clean code, curiosity, and a touch of care 🌱✨  
+  
+🌍 Combining tech, math, and music, to solve world's challenges — and create with<WordCycle />.
+  `
   },
   experiencePage: [
     {

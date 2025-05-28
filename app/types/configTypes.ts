@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 type ContactOptions =
   | "email"
   | "linkedin"
@@ -27,7 +29,7 @@ export interface Configs {
   };
   aboutPage: {
     greeting: string;
-    content: string;
+    content: ReactNode;
   };
   experiencePage?: {
     sectionName: string;
