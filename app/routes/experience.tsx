@@ -36,6 +36,7 @@ export default function Experience() {
               degree={item.degree}
               content={item.content}
               location={item.location}
+              eayikesLink={item.eayikesLink} 
             />
           ))}
         </div>

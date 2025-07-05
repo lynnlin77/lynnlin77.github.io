@@ -6,9 +6,31 @@ type ExperienceCardProps = {
   degree?: string;
   date?: string;
   location?: string;
+  eayikesLink?: string;
 };
 
 export default function ExperienceCard(props: ExperienceCardProps) {
+  const renderTitle = () => {
+    if (!props.eayikesLink || !props.title.includes("Eayikes")) return props.title;
+  
+    const [before, after] = props.title.split("Eayikes");
+  
+    return (
+      <>
+        {before}
+        <a
+          href={props.eayikesLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:text-blue-800 underline"
+        >
+          Eayikes
+        </a>
+        {after}
+      </>
+    );
+  };
+  
   return (
     <div
       className="w-full md:w-11/12 mx-auto my-4 rounded-2xl shadow-md"
@@ -16,7 +38,7 @@ export default function ExperienceCard(props: ExperienceCardProps) {
     >
       <div className="px-8 py-6">
         {/* title */}
-        <h2 className="text-2xl font-blackOpsOne text-gray-900">{props.title}</h2>
+        <h2 className="text-2xl font-blackOpsOne text-gray-900">{renderTitle()}</h2>
 
         {/* data */}
         {(props.date || props.location) && (

@@ -39,6 +39,7 @@ export interface Configs {
       degree?: string;
       location?: string;
       content: string;
+      eayikesLink?:string;
     }[];
   }[];
   skillsPage?: {
