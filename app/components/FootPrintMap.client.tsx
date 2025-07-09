@@ -10,7 +10,7 @@ export interface FootPrintData {
 }
 
 interface FootPrintMapProps {
-  sWithPicture: FootPrintData[];
+  footPrintsWithPicture: FootPrintData[];
   footPrintsWithoutPicture: FootPrintData[];
 }
 
