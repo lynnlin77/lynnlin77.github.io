@@ -36,4 +36,4 @@ powered by clean code, curiosity, and a touch of care 🌱✨
       ● Developed a scalable camping site review platform using React for dynamic front-end and Django REST framework for robust backend API development.
       ● Optimized data retrieval with Redis caching, reducing API response times by 20% for high-frequency queries.
       ● Streamlined CI/CD pipelines with Docker and Google Cloud, achieving an 80% increase in deployment efficiency.
-          `,skills:""}]};export{e as c};
+          `,skills:""}]},n=e;export{n as c};
