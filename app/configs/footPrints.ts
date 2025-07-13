@@ -93,8 +93,8 @@ export const footPrintsWithPicture: FootPrintData[] = [
   },
   {
     position: [34.6464, -112.4291],
-    image: "Yavapai.jpg",
-    title: "Yavapai",
+    image: "Sedona.jpg",
+    title: "Sedona",
   },
   {
     position: [33.4482, -112.077],
@@ -153,8 +153,8 @@ export const footPrintsWithPicture: FootPrintData[] = [
   },
   {
     position: [-43.4627, 170.0090],
-    image: "Queenstown.jpg",
-    title: "Queenstown",
+    image: "FoxGlacier.jpg",
+    title: "FoxGlacier",
   },
   {
     position: [30.7426, 120.4878],
@@ -196,11 +196,31 @@ export const footPrintsWithPicture: FootPrintData[] = [
     image: "Honolulu.jpg",
     title: "Honolulu",
   },
-
-
-
-
-
+  {
+    position: [41.7450, 127.9656],
+    image: "Changbaek-sanjulgi.jpg",
+    title: "Changbaek-sanjulgi",
+  },
+  {
+    position: [27.0983, 100.1750],
+    image: "Jade.jpg",
+    title: "Jade Dragon Snow Mountain",
+  },
+  {
+    position: [24.8797, 102.8332],
+    image: "Kunmiing.jpg",
+    title: "Kunming",
+  },
+  {
+    position: [22.1987, 113.5439],
+    image: "Macao.jpg",
+    title: "Macao",
+  },
+  {
+    position: [1.3521, 103.8198],
+    image: "Singapore.jpg",
+    title: "Singapore",
+  },
 ];
 
 export const footPrintsWithoutPicture: FootPrintData[] = [
@@ -240,6 +260,11 @@ export const footPrintsWithoutPicture: FootPrintData[] = [
   { position: [41.8967, 12.4822]},
   { position: [44.9778, -93.2650]},
   { position: [19.8987, -155.6659]},
+  { position: [41.7450, 127.9656]},
+  { position: [27.0983, 100.1750]},
+  { position: [24.8797, 102.8332]},
+  {  position: [22.1987, 113.5439]},
+
 
   
   
