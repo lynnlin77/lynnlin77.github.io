@@ -198,7 +198,6 @@ export const footPrintsWithPicture: FootPrintData[] = [
   },
   {
     position: [41.7450, 127.9656],
-    image: "Changbaek-sanjulgi.jpg",
     title: "Changbaek-sanjulgi",
   },
   {
@@ -207,7 +206,7 @@ export const footPrintsWithPicture: FootPrintData[] = [
   },
   {
     position: [24.8797, 102.8332],
-    image: "Kunmiing.jpg",
+    image: "Kunming.jpg",
     title: "Kunming",
   },
   {
@@ -254,7 +253,6 @@ export const footPrintsWithoutPicture: FootPrintData[] = [
   { position: [40.7128, -74.006]},
   { position: [42.3555, -71.0565]},
   { position: [15.8700,100.9925]},
-  { position: [15.8700,100.9925]},
   { position: [10.7291, 103.2317]},
   { position: [13.4125, 103.8670]},
   { position: [39.9526, -75.1652]},
@@ -291,4 +289,5 @@ export const footPrintsWithoutPicture: FootPrintData[] = [
   { position: [25.2048, 55.2708]},
   { position: [34.2658, 108.9541]},
   { position: [-26.8206, 30.8025]},
+  { position: [40.6338, 14.6028]},
 ];
